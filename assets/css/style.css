@@ -8,6 +8,7 @@ body {
     overflow-x: hidden;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #2B2F38;
+    height: 100dvh;
 }
 
 
@@ -16,7 +17,11 @@ img {
     height: 100%;
 }
 
-.box {
+.mobile {
+    display: none;
+}
+
+/* .box {
     position: absolute;
     background-color: rgba(255, 255, 255, 0.169);
     animation-name: blink;
@@ -28,7 +33,9 @@ img {
     opacity: .7;
     border-radius: 10px;
     cursor: pointer;
-}
+} */
+
+
 
 @keyframes blink {
     from {
@@ -45,5 +52,13 @@ img {
 @media screen and (max-width: 1024px) {
     img {
         height: 100vh;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
     }
 }
